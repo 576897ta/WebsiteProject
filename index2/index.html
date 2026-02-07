@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tahsina Arefin • Personal Site</title>
+
+  <!-- Nice readable font -->
+  https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap
+
+  <style>
+    /* ======= Simple theme colors (change if you want) ======= */
+    :root{
+      --bg: #0f172a;        /* page background (dark navy)   */
+      --panel: #111827;     /* card background               */
+      --text:#cec3c3;      /* main text                     */
+      --muted:#647ca7;      /* lighter text                  */
+      --accent:#ec4899;     /* pink                          */
+      --accent2:#22d3ee;    /* cyan                          */
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 14px;
+    }
+
+    /* ======= Base styles ======= */
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Inter", Arial, sans-serif;
+      background:
+        radial-gradient(900px 500px at 100% 0%, rgba(34,211,238,.10), transparent 60%),
+        radial-gradient(900px 500px at 0% 0%, rgba(236,72,153,.12), transparent 60%),
+        var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:inherit; text-decoration:none}
+
+    /* ======= Simple header with gradient ======= */
+    header{
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color:#0b1220;
+      padding: 28px 16px;
+      text-align:center;
+      box-shadow: var(--shadow);
+    }
+    header h1{ margin:0 0 6px; font-size: clamp(1.6rem, 3vw, 2.2rem); }
+    header p{ margin:0; font-weight:600 }
+
+    /* ======= Content container & cards ======= */
+    .wrap{ max-width: 900px; margin: 26px auto; padding: 0 16px; }
+    .card{
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+    h2{ margin: 6px 0 10px; font-size: 1.25rem; }
+    .muted{ color: var(--muted); }
+
+    /* ======= Lists ======= */
+    ul, ol{ padding-left: 18px; margin: 8px 0; }
+    li{ margin: 6px 0; }
+
+    /* ======= Buttons (very simple) ======= */
+    .row{ display:flex; gap:10px; flex-wrap:wrap; }
+    .btn{
+      display:inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border:1px solid rgba(255,255,255,.15);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+    }
+    .btn.primary{
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color:#0b1220; font-weight:700;
+    }
+    .btn:hover{ filter: brightness(1.05); }
+
+    /* ======= Footer ======= */
+    footer{
+      text-align:center; color:var(--muted);
+      padding: 22px 16px; margin-top: 14px;
+      border-top: 1px solid rgba(255,255,255,.08);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ============= HERO ============= -->
+  <header>
+    <h1>Welcome! I’m Tahsina 🦑</h1>
+    <p>My simple, clean website — made with only HTML & a bit of CSS</p>
+  </header>
+
+  <!-- ============= MAIN CONTENT ============= -->
+  <main class="wrap">
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        Hello! I’m <b>Tahsina</b>. My big brother challenged me to build a website —
+        and I’m doing it step by step. This page is clean, fast, and easy to read.
+      </p>
+      <div class="row">
+        <span class="btn">📸 Photography</span>
+        <span class="btn">🧠 Learning</span>
+        <span class="btn">🌐 Exploring the web</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Things I Like</h2>
+      <ul>
+        <li>Study</li>
+        <li>Take photos</li>
+        <li>Use the internet</li>
+      </ul>
+      <p class="muted">Unordered list with clean spacing.</p>
+    </section>
+
+    <section class="card">
+      <h2>My Daily Routine</h2>
+      <ol>
+        <li>Wake up</li>
+        <li>Go to University</li>
+        <li>Study</li>
+        <li>Eat in the canteen</li>
+        <li>Have tea with friends</li>
+        <li>Sleep</li>
+      </ol>
+      <p class="muted">Ordered list with numbers.</p>
+    </section>
+
+    <section class="card">
+      <h2>Favorite Website</h2>
+      <p>
+        I often search using
+        https://www.google.comGoogle</a>.
+      </p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        mailto:tahsinaarefin34@email.com
+          ✉️ tahsinaarefin34@email.com
+        </a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>© 2026 • Built by Tahsina • Hosted on GitHub Pages</footer>
+</body>
+</html>
